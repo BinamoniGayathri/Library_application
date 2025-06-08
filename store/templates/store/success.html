@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            padding:40px;
+            text-align:center;
+            background-color:rgb(250, 234, 234);
+        }
+        .success-box{
+           background-color:rgb(240, 192, 192);
+           color:rgb(184, 11, 11);
+           border:1px solid rgb(235, 108, 108);
+           padding:30px;
+           border-radius:10px;
+           display:inline-block; /* this is to make the box shorter in size*/
+        }
+        .btn{
+            margin-top:30px;
+            padding:10px 20px;
+            background:rgb(209, 23, 23);
+            color: #f4f4f4;
+            text-decoration:none;
+            border-radius:6px;
+        }
+        .btn:hover{
+            background:rgb(224, 91, 91);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <h2>Book Record added successfully</h2>
+        <p>Your data has been saved</p>
+        <a href="{% url 'add_book' %}" class="btn">Add Another Book</a>
+        <a href="{% url 'home' %}" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
